@@ -21,7 +21,7 @@ pipeline {
       }
     stage ('Docker Build') {
       steps{
-        sh 'docker build -t registry'
+        sh 'docker build -t registry .'
       }
     }
     stage('Pushing to ECR') {
