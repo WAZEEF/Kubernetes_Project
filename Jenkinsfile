@@ -27,7 +27,7 @@ pipeline {
     stage('Pushing to ECR') {
      steps{  
                 sh 'aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 150772578985.dkr.ecr.eu-west-2.amazonaws.com'
-                sh 'docker push 150772578985.dkr.ecr.eu-west-2.amazonaws.com/k8s-project:latest'
+                sh 'docker push 150772578985.dkr.ecr.eu-west-2.amazonaws.com/k8s-project'
          }
         }
        stage('K8S Deploy') {
