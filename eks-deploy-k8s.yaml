@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: 150772578985.dkr.ecr.eu-west-2.amazonaws.com/k8s-project
+        image: registry
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
