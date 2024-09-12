@@ -21,7 +21,7 @@ pipeline {
       }
     stage ('Docker Build') {
       steps{
-        sh 'docker build -t registry .'
+        sh 'docker build -t 150772578985.dkr.ecr.eu-west-2.amazonaws.com/k8s-project:latest .'
       }
     }
     stage('Pushing to ECR') {
